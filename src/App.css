@@ -1,0 +1,170 @@
+.App {
+  text-align: center;
+}
+
+/* for setting text color with specific gradient */
+.GreenGradient {
+  background: -webkit-linear-gradient(45deg, #6DB935, #6AB831, #4DAA09);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-green-gradient {
+  background: linear-gradient(to bottom, #6DB935, #6AB831, #4DAA09);
+}
+
+.hover-bg-green-gradient:hover {
+  background: linear-gradient(to bottom, #6DB935, #6AB831, #4DAA09);
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/* for making scroll bar rounded in shape and removing arrows */
+#style-1::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(234, 225, 225, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+#style-1::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(234, 225, 225, 0.3);
+  background-color: rgb(183, 182, 182);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* for removing the down arrow from select */
+.custom-select::-ms-expand {
+  display: none;
+}
+
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 2px 30px 2px 2px;
+}
+
+/* for removing the down arrow from input list attribute */
+.custom-list-input::-ms-expand {
+  display: none;
+}
+
+.custom-list-input::-webkit-calendar-picker-indicator {
+  display: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+
+/* Custom scroll bar starts  */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d3748;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(143, 143, 143, 0.5);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: rgba(143, 143, 143, 0.5);
+}
+
+::-webkit-scrollbar-track:active {
+  background: rgba(143, 143, 143, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Custom scrollbar ends  */
+
+.line-clamp-5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+.animation-fade {
+  animation: fading 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+}
+
+.animation-fade.duration-5 {
+  animation-duration: 7s;
+  transition-duration: 7s;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* adding icon inside input field Start*/
+
+.custom-icon-label {
+  position: relative;
+}
+
+.custom-icon-label:after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  width: 20px;
+  background: url("./assets/Edit.svg") center / contain no-repeat;
+}
+
+.custom-icon-input {
+  padding: 10px 40px;
+}
+/* adding icon inside input field End*/
